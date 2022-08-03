@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="SmartMenu">
+		<attr name="inner_padding" format="dimension"/>
+		<attr name="outer_padding" format="dimension"/>
+		<attr name="smart_btn_size" format="dimension"/>
+		<attr name="vertical_padding" format="dimension"/>
+		<attr name="dot_radius" format="dimension"/>
+		<attr name="dot_distance" format="dimension"/>
+		<attr name="dot_color" format="color|reference"/>
+		<attr name="bg_color" format="color|reference"/>
+		<attr name="shadow_color" format="color|reference"/>
+	</declare-styleable>
+	
+	<declare-styleable name="RippleBackground">
+		<attr name="rb_color" format="color"/>
+		<attr name="rb_strokeWidth" format="dimension"/>
+		<attr name="rb_radius" format="dimension"/>
+		<attr name="rb_duration" format="integer"/>
+		<attr name="rb_rippleAmount" format="integer"/>
+		<attr name="rb_scale" format="float"/>
+		<attr name="rb_type" format="enum">
+			<enum name="fillRipple" value="0"/>
+			<enum name="strokeRipple" value="1"/>
+		</attr>
+	</declare-styleable>
+	
+</resources>

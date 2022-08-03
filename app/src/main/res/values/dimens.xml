@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dim56dp">56dp</dimen>
+    <dimen name="dim64dp">64dp</dimen>
+	<dimen name="dim112dp">112dp</dimen>
+	
+	<dimen name="rippleStrokeWidth">2dp</dimen>
+	<dimen name="rippleRadius">64dp</dimen>
+</resources>

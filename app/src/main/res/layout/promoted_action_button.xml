@@ -1,0 +1,9 @@
+<ImageButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dim64dp"
+    android:layout_height="@dimen/dim64dp"
+    android:layout_gravity="center"
+	android:scaleType="centerInside"
+    android:visibility="gone"
+    android:background="@drawable/onivas_fab_circle"
+/>

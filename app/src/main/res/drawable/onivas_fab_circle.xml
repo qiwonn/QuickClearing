@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/onivas_rounded_button_shadow"/>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/white"/>
+            <size
+                android:width="@dimen/dim64dp"
+                android:height="@dimen/dim64dp"/>
+        </shape>
+    </item>
+</layer-list>

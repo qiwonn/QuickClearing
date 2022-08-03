@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+    android:gravity="center">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+	 	android:layout_weight="618"
+		android:padding="5dp">
+		
+		<com.wq.qs.swipelistview.SwipeMenuListView
+			android:id="@+id/listView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />
+		
+	</LinearLayout>
+	
+	<View android:layout_height="1px" android:layout_width="match_parent" android:background="#dddddd"/>
+		
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+	 	android:layout_weight="1000"
+		android:padding="1dp">
+		
+		<FrameLayout
+			android:id="@+id/container"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center">
+			<com.wq.qs.view.RippleBackground 
+				xmlns:android="http://schemas.android.com/apk/res/android" 
+				xmlns:app="http://schemas.android.com/apk/res-auto" 
+				android:layout_width="match_parent" 
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:id="@+id/ripple_content" 
+				app:rb_color="#0099dd" 
+				app:rb_radius="38dp" 
+				app:rb_rippleAmount="1" 
+				app:rb_duration="2600" 
+				app:rb_scale="6">
+			</com.wq.qs.view.RippleBackground>
+			
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center">
+				<ProgressBar 
+					android:id="@+id/clear_progrossbar"
+					android:layout_width="256dp" 
+					android:layout_height="256dp" 
+					android:visibility="gone"
+					android:indeterminateDrawable="@drawable/rotate_loading_360" 
+					android:indeterminateDuration="2020"/>
+			</RelativeLayout>
+			
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<Button 
+					android:id="@+id/returnBtn" 
+					android:visibility="visible"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_alignParentRight="true"
+					android:background="#ff0000"
+					android:scaleType="centerInside"
+					android:text="返回" 
+					android:textSize="13sp"/>
+			</RelativeLayout>
+			
+		</FrameLayout>
+		
+	</LinearLayout>
+	
+</LinearLayout>

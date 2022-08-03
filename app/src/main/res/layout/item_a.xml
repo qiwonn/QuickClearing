@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_item_root"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+	
+	
+	<CheckBox 
+		android:id="@+id/item_checkbox" 
+		android:focusable="false"
+		android:clickable="false" 
+		android:visibility="gone" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"/>
+	
+	
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="60dp"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		>
+		<ImageView
+			android:id="@+id/iv_type"
+			android:layout_width="42dp"
+			android:layout_height="42dp"
+			android:layout_centerVertical="true"
+			android:background="@drawable/folder"/>
+
+		<TextView
+			android:id="@+id/tv_choose"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#bbbbbb"
+			android:text="○"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"/>
+
+		<LinearLayout
+			android:id="@+id/layout_info"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:layout_toLeftOf="@id/tv_choose"
+			android:layout_toRightOf="@id/iv_type"
+			android:orientation="vertical"
+			android:padding="10dp">
+
+			<TextView
+				android:id="@+id/tv_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				style="@style/File_item_text_name"
+				android:ellipsize="end"
+				android:singleLine="true"
+				android:text="奇速清理"/>
+
+			<TextView
+				android:id="@+id/tv_detail"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				style="@style/File_item_text_detail"
+				android:ellipsize="end"
+				android:singleLine="true"
+				android:text="类型：txt  大小：1024KB"/>
+		</LinearLayout>
+	</RelativeLayout>
+    
+</LinearLayout>
